@@ -76,7 +76,7 @@ public class DTOOperation {
 /// PUT --- http://localhost:8080/api/v1/Hey/1
 
 
- /// update the particular value from the database
+ /// update the particular value from the data
     @PatchMapping("/Hey/update description/{id}")
     public ResponseEntity<DTOProperty> updatePropertyDescription(@RequestBody DTOProperty property,@PathVariable Long id)
     {

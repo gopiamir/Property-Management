@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class PropertyConverter {
-    //here  we have to convert DTO to Entity
+    //here we have to convert DTO to Entity
     public PropertyEntity convertDTOtoEntity(DTOProperty property)
     {
         PropertyEntity pe = new PropertyEntity();

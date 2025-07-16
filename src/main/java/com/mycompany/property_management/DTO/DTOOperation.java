@@ -94,7 +94,7 @@ public class DTOOperation {
         return res;
     }
 
-    ///  DELETE -----http://localhost:8080/api/v1/Hey/2
+    ///DELETE -----http://localhost:8080/api/v1/Hey/2
 }
 
 

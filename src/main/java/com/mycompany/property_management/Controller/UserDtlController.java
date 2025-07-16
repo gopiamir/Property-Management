@@ -1,5 +1,5 @@
 package com.mycompany.property_management.Controller;
-
+import java.util.logging.Logger;
 import com.mycompany.property_management.DTO.UserDtlDTO;
 import com.mycompany.property_management.Service.UserDtlService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,11 +21,11 @@ public class UserDtlController {
     public ResponseEntity<UserDtlDTO> sample(@RequestBody UserDtlDTO userDtlDTO)
     {
         userDtlDTO = userDtlService.register(userDtlDTO);
-        System.out.println(userDtlDTO);
+
 
         //to make end to end connection
-        ResponseEntity<UserDtlDTO>  response = new ResponseEntity<>(userDtlDTO, HttpStatus.CREATED);
-        return response;
+        return new ResponseEntity<>(userDtlDTO, HttpStatus.CREATED);
+
         //http://localhost:8080/api/v1/Hey
     }
 }
